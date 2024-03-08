@@ -3,7 +3,11 @@ import Registro from "./components/registro/Registro"
 
 function App() {
 
-  return <Registro />;
+  return (
+    <main>
+      <Registro />
+    </main>
+  );
 }
 
 export default App
