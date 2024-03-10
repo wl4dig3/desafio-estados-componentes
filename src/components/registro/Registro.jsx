@@ -1,4 +1,3 @@
-import React from 'react';
 import './Registro.css';
 import Formulario from '../formulario/Formulario';
 import SocialButton from '../socialButton/SocialButton';
@@ -15,7 +14,6 @@ function Registro() {
         })}
       </div>
       <p className='texto-social-buttons'>O usa tu email para registarte</p>
-      {/* <SocialButton icon={iconos.map( (item)=> {item.icon})} /> */}
       <Formulario />
     </section>
   );

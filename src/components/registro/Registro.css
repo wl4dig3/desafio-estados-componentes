@@ -19,3 +19,6 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+.texto-social-buttons {
+    text-align: center;
+}
