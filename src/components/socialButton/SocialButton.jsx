@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './SocialButton.css';
 
-function SocialButton() {
+// eslint-disable-next-line react/prop-types
+function SocialButton({icon}) {
   return (
-    <div>SocialButton</div>
-  )
+    <>
+    <section className="container-social-buttons">
+      <div className="container-button">
+        <button className="button">
+          <FontAwesomeIcon icon={icon} />
+        </button>
+      </div>
+    </section>
+    </>
+  );
 }
 
 export default SocialButton
