@@ -15,3 +15,7 @@ h1 {
     font-size: 2rem;
     text-align: center;
 }
+.registro-container-iconos-sociales {
+    display: flex;
+    justify-content: space-between;
+}

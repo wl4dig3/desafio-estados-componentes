@@ -8,13 +8,5 @@
     font-size: 1.5rem;
     background-color: "#fff";
 }
-.container-social-buttons {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.texto-social-buttons {
-    text-align: center;
-}
+
     
