@@ -1,13 +1,12 @@
 import Registro from "./components/registro/Registro"
-
+import { useState } from "react"
 
 function App() {
-
-  return (
-    <main>
-      <Registro />
-    </main>
-  );
+    const [mensaje, setMensaje] = useState([])
+    return(
+        <Registro mensaje={mensaje} setMensaje={setMensaje} />
+    )
+  
 }
 
 export default App

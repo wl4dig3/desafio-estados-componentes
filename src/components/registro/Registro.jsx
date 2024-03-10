@@ -1,8 +1,8 @@
-import React from 'react';
 import './Registro.css';
 import Formulario from '../formulario/Formulario';
 import SocialButton from '../socialButton/SocialButton';
 import { faFacebook, faLinkedin, faGit } from '@fortawesome/free-brands-svg-icons';
+import Alert from '../alert/Alert';
 
 function Registro() {
   const iconos = [faFacebook, faLinkedin, faGit];
@@ -17,6 +17,7 @@ function Registro() {
       <p className='texto-social-buttons'>O usa tu email para registarte</p>
       {/* <SocialButton icon={iconos.map( (item)=> {item.icon})} /> */}
       <Formulario />
+      <Alert mensaje = {mensaje}/>
     </section>
   );
 }
