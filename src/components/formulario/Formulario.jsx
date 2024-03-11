@@ -12,7 +12,8 @@ function Formulario() {
     password: '',
     repeatPassword: '',
   };
-const [ err, setErr] = useState(false);
+const [ err, setErr] = useState(null);
+const [exito, setExito] = useState(null);
 
   const [dataFormulario, setDataFormulario] = useState(valorInicial);
 
@@ -20,19 +21,7 @@ const [ err, setErr] = useState(false);
   setDataFormulario( (estadoPrevio) => ({...estadoPrevio, [e.target.name]: e.target.value}));
   };
 
-  
 
-  // const error = () => {
-  //   if (
-  //     dataFormulario.nombre == '' ||
-  //     dataFormulario.email == '' ||
-  //     dataFormulario.password == '' ||
-  //     dataFormulario.repeatPassword == ''
-  //     ){
-  //     return (<Alerta />)
-
-  //   } 
-  // };
   const enviar = () => {
     if (
       dataFormulario.nombre == '' ||
@@ -42,7 +31,10 @@ const [ err, setErr] = useState(false);
       ){
       return setErr(true)
 
-    }  return null
+}  else {
+  setErr(false)
+  setExito(true)
+}
   }
 
   return (
@@ -74,7 +66,8 @@ const [ err, setErr] = useState(false);
       <Button onClick={enviar} variant="success" size="lg">
         Registrarse
       </Button>
-      { err ? <Alerta /> : null  }
+      { err ? <Alerta color="danger" mensaje="Completa todos los campos!" /> : null  }
+      {exito ? <Alerta color="success" mensaje="Registro exitoso!" /> : null }
     </section>
   );
 }

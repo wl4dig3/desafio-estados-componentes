@@ -1,7 +1,8 @@
 import Alert from 'react-bootstrap/Alert';
 
-function Alerta() {
-  return <Alert variant={'warning'}>Completa todos los campos!</Alert>;
+// eslint-disable-next-line react/prop-types
+function Alerta({mensaje, color}) {
+  return <Alert variant={color}>{mensaje}</Alert>;
 }
 
 export default Alerta;
