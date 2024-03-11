@@ -2,7 +2,6 @@ import './Registro.css';
 import Formulario from '../formulario/Formulario';
 import SocialButton from '../socialButton/SocialButton';
 import { faFacebook, faLinkedin, faGit } from '@fortawesome/free-brands-svg-icons';
-import Alert from '../alert/Alert';
 
 function Registro() {
   const iconos = [faFacebook, faLinkedin, faGit];
